@@ -1,19 +1,13 @@
-import React, { FC } from "react";
-import { routes } from "./list";
-import { BrowserRouter, Route, Routes as RRoutes } from 'react-router-dom';
+import { FC } from "react";
+import { BrowserRouter, Routes as RRoutes, Route } from "react-router-dom";
 import Layout from "../layout/Layout";
-import { useAuth } from "../providers/useAuth";
+import { routes } from "./list";
 
 const Routes: FC = () => {
-  const {user} = useAuth()
-
   return (
     <BrowserRouter>
       <RRoutes>
         {routes.map((route, index) => {
-          if (route.auth && !user) {
-            return null;
-          }
           return (
             <Route
               key={index}
@@ -29,6 +23,6 @@ const Routes: FC = () => {
       </RRoutes>
     </BrowserRouter>
   );
-}
+};
 
 export default Routes;
