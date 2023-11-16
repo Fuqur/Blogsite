@@ -2,8 +2,11 @@ import { FC } from "react";
 import { BrowserRouter, Routes as RRoutes, Route } from "react-router-dom";
 import Layout from "../layout/Layout";
 import { routes } from "./list";
+import  Auth  from "../pages/auth/Auth";
+import { useAuth } from "../providers/useAuth";
 
 const Routes: FC = () => {
+  const {user}=useAuth ()
   return (
     <BrowserRouter>
       <RRoutes>
@@ -14,7 +17,8 @@ const Routes: FC = () => {
               path={route.path}
               element={
                 <Layout>
-                  <route.component />
+                  {route.auth&&!user?<Auth/>:
+                  <route.component />}
                 </Layout>
               }
             />

@@ -11,7 +11,6 @@ const Header: FC = () => {
   };
 
   const handleInputBlur = () => {
-    // Delay resetting the state to allow clicking on the Search icon.
     setTimeout(() => {
       setisSearchActive(false);
     }, 100);

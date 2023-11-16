@@ -24,10 +24,11 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <>
       <Header />
       <Grid container spacing={2} paddingX={5} marginTop={2}>
+        {user&&
         <Grid item md={2}>
           <Sidebar />
-        </Grid>
-        <Grid item md={9}>
+        </Grid>}
+        <Grid item md={user?9:12}>
           {children}
         </Grid>
       </Grid>
