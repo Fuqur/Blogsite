@@ -28,7 +28,7 @@ const Profile: FC = () => {
       />
       <h1 style={{ fontSize: "24px", marginBottom: "8px" }}>{user?.name}</h1>
       <h3 style={{ fontSize: "16px", marginBottom: "8px" }}>
-        Russia, SPB
+        Czech Republic, Pague
       </h3>
       <p className="title" style={{ fontSize: "14px", marginBottom: "8px" }}>
         Student

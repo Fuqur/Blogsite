@@ -42,4 +42,10 @@ export const routes=[
         component:Auth,
         auth:false,
     },
+    {
+        path: '/friends',
+        exact: false,
+        component: Friends,
+        auth: true,
+      },
 ]
