@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./Carsite/static/css/main.4061e986.css",
-    "main.js": "./Carsite/static/js/main.6f2fc9ba.js",
-    "index.html": "./Carsite/index.html",
-    "main.4061e986.css.map": "./Carsite/static/css/main.4061e986.css.map",
-    "main.6f2fc9ba.js.map": "./Carsite/static/js/main.6f2fc9ba.js.map"
+    "main.css": "./Blogsite/static/css/main.4061e986.css",
+    "main.js": "./Blogsite/static/js/main.6ee42bb3.js",
+    "index.html": "./Blogsite/index.html",
+    "main.4061e986.css.map": "./Blogsite/static/css/main.4061e986.css.map",
+    "main.6ee42bb3.js.map": "./Blogsite/static/js/main.6ee42bb3.js.map"
   },
   "entrypoints": [
     "static/css/main.4061e986.css",
-    "static/js/main.6f2fc9ba.js"
+    "static/js/main.6ee42bb3.js"
   ]
 }
