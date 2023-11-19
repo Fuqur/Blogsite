@@ -44,3 +44,32 @@ left:50px;
 transition: opacity 0.3s ease;
 }
 
+@media (max-width: 601px) {
+    .header {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 0.4rem 1rem 0.6rem; 
+    }
+ 
+    .header .image-wrapper {
+       width: 100%; 
+       text-align: center; 
+       margin-bottom: 1rem; 
+    }
+ 
+    .header .wrapper {
+       width: 100%; 
+       margin-left: 0; 
+    }
+ 
+    .header .wrapper > input {
+       width: 100%; 
+       max-width: 600px; 
+    }
+ 
+    .header .wrapper > svg {
+       left: 0; 
+       top: 0;
+    }
+ }

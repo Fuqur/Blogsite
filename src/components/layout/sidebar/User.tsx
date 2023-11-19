@@ -18,7 +18,7 @@ const User = () => {
             }}
         >
          <Chip
-            avatar={<Avatar alt="Sergey" src={user?.avatar} />}
+            avatar={<Avatar alt="user" src={user?.avatar} />}
             label={user?.name||'No name'} 
             sx={{display:'flex',marginBottom:2}}
             />
