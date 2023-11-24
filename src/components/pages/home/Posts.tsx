@@ -22,7 +22,7 @@ return() => {
   unsub()
 }
 
-},[])
+},[db])
 
 return  ( <>
 {posts.map((post,idx)=>(
