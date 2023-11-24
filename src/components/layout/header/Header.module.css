@@ -22,14 +22,14 @@ position: relative;
 }
 
 .header .wrapper >input {
-width: 600px;
-background-color: transparent;
-border: none;
-outline: none;
-color: #fff;
-font-size: 16px;
-text-align: center;
-padding: 10px;
+   width: 600px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: #fff;
+   font-size: 16px;
+   text-align: center;
+   padding: 10px;
 }
 
 .header .wrapper > input::placeholder {
@@ -52,9 +52,9 @@ transition: opacity 0.3s ease;
        padding: 0.4rem 1rem 0.6rem; 
     }
  
-    .header .image-wrapper {
-       width: 100%; 
-       text-align: center; 
+    .header .image-wrapper  {
+      width: 35px;
+      height: 35px;
        margin-bottom: 1rem; 
     }
  
@@ -66,10 +66,16 @@ transition: opacity 0.3s ease;
     .header .wrapper > input {
        width: 100%; 
        max-width: 600px; 
+       font-size: 14px;
+      padding: 8px;
     }
  
     .header .wrapper > svg {
-       left: 0; 
-       top: 0;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%)
     }
+ }
+ .header .wrapper > svg:hover {
+   opacity: 0.8;
  }

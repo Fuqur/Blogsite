@@ -67,7 +67,7 @@ const Friends: FC = () => {
           backgroundColor: '#FF66CC', 
           color: 'white',
           padding: '8px 16px', 
-          fontSize: '14px',
+          fontSize: '20px',
           border: 'none',
           borderRadius: '4px',
           width: '200px', 

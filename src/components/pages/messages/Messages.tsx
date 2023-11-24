@@ -63,7 +63,7 @@ const Messages: FC = () => {
         </Alert>
       )}
       <Card>
-        <List style={{ height: "70vh", overflowY: "auto" }}>
+        <List style={{ height: "70vh", overflowY: "auto",backgroundColor:'#FFFFCC', borderRadius: 16,marginBottom:'10px'}}>
           {messages.map((msg, idx) => (
             <ListItem key={idx}>
   <Grid container sx={{ flexDirection: 'column-reverse', textAlign: msg.user.id === user?.id ? 'right' : 'left' }}>
@@ -84,7 +84,7 @@ const Messages: FC = () => {
           ))}
         </List>
         <Divider />
-        <Grid container style={{ padding: "20px" }}>
+        <Grid container style={{ padding: "20px",backgroundColor: '#FFFFFF',  overflow: 'hidden',borderRadius: 16,}}>
           <Grid item xs={11}>
             <TextField
               id="outlined-basic-email"

@@ -22,7 +22,7 @@ const Header: FC = () => {
         <img src={logoimg} alt="" />
       </div>
       <div className={styles.wrapper}>
-        {!isSearchActive && <Search />}
+      <Search className={!isSearchActive ? styles.searchIcon : styles.hidden} />
         <input
           type="text"
           placeholder="Search"
